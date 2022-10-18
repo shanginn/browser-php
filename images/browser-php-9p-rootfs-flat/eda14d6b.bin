@@ -1,0 +1,7 @@
+cd03eb27e60f3788acbccdd9a370b653  usr/include/php/20210902/ext/igbinary/igbinary.h
+dbe410913c8ed647c68ed52b206f6c06  usr/include/php/20210902/ext/igbinary/php_igbinary.h
+e8cb6e5f8e72676faa5f163a7a69508a  usr/include/php/20210902/ext/igbinary/src/php7/igbinary.h
+89e7a711dbc7ee75d0ace8ac69ef91c7  usr/include/php/20210902/ext/igbinary/src/php7/php_igbinary.h
+fb0a0e1d7717f6f266e56f4e73793dcc  usr/lib/php/20210902/igbinary.so
+96333129a282424a940bb396bc7a8039  usr/share/doc/php8.1-igbinary/changelog.Debian.gz
+522d5459471706cdc89e0a3358755515  usr/share/doc/php8.1-igbinary/copyright

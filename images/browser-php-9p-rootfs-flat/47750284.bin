@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/bin
+/usr/bin/mlock
+/usr/share
+/usr/share/doc
+/usr/share/doc/mlock
+/usr/share/doc/mlock/NEWS.Debian.gz
+/usr/share/doc/mlock/buildinfo_i386.gz
+/usr/share/doc/mlock/changelog.Debian.gz
+/usr/share/doc/mlock/copyright
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/mlock
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/mlock.1.gz

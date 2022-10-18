@@ -1,0 +1,19 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_php/UNDECLARED
+# Hey emacs, this is -*- shell-script -*-
+
+if [ -e /usr/lib/php/php-maintscript-helper ] ; then
+    . /usr/lib/php/php-maintscript-helper
+    
+    for version in 8.1 ; do
+        for name in memcache ; do
+            php_invoke enmod "$version" ALL "$name" || exit 1
+	done
+    done
+else
+    for name in memcache ; do
+        phpenmod "$name"
+    done
+fi
+# End automatically added section

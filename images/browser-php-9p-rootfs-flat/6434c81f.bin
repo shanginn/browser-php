@@ -1,0 +1,7 @@
+083a69ed5f85ec487e6d8dcca2e65cfc  usr/lib/php/20210902/pdo_pgsql.so
+6e3f70c751065cd360faffc535925b84  usr/lib/php/20210902/pgsql.so
+e41580cfbcbc2cfd512b586d06a725e4  usr/share/bug/php8.1-pgsql/control
+b88ca23db512b9288b161c08bc840ddd  usr/share/bug/php8.1-pgsql/script
+fe43a74dd031a28b5c6df0584c7dbaf0  usr/share/lintian/overrides/php8.1-pgsql
+22c2c7372385f3fbacadaac4479b1ded  usr/share/php8.1-pgsql/pgsql/pdo_pgsql.ini
+2a1602f343abeb71dbafd03b265988a1  usr/share/php8.1-pgsql/pgsql/pgsql.ini

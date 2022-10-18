@@ -1,0 +1,5 @@
+31dea1d8436066eb5b6626287658817b  usr/lib/php/20210902/bcmath.so
+e41580cfbcbc2cfd512b586d06a725e4  usr/share/bug/php8.1-bcmath/control
+b4346169cb0688d7805587dc802b0189  usr/share/bug/php8.1-bcmath/script
+d4300c783e0b1f8d9941e671a539cdda  usr/share/lintian/overrides/php8.1-bcmath
+2f28609970565538f407bba8b8a38fcf  usr/share/php8.1-bcmath/bcmath/bcmath.ini

@@ -1,0 +1,5 @@
+95eb954ff604f517da172d44c80376ce  usr/lib/php/20210902/soap.so
+e41580cfbcbc2cfd512b586d06a725e4  usr/share/bug/php8.1-soap/control
+f0c85e10aa3786c6bdd519d0f371d2ce  usr/share/bug/php8.1-soap/script
+4b45d63944c865811c957ab5eb0ab2db  usr/share/lintian/overrides/php8.1-soap
+18195911708014f1a66ec2fa22c1fcef  usr/share/php8.1-soap/soap/soap.ini

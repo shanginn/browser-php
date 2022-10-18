@@ -1,0 +1,5 @@
+3938343f057f5f8e38c72cb5e491bafd  usr/lib/php/20210902/intl.so
+e41580cfbcbc2cfd512b586d06a725e4  usr/share/bug/php8.1-intl/control
+d4bf7a564ce166173b6d356337bc0c24  usr/share/bug/php8.1-intl/script
+f991fbc7472fe8888b3e3239d3ddbf3e  usr/share/lintian/overrides/php8.1-intl
+66dd72756634f83008541a4d4bce2342  usr/share/php8.1-intl/intl/intl.ini

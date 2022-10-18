@@ -1,0 +1,77 @@
+# This is the "slim" variant of the Debian base image.
+# Many files which are normally unnecessary in containers are excluded,
+# and this configuration file keeps them that way.
+
+# dpkg -S '/usr/share/doc/*'
+#  adduser apt base-files base-passwd bash bsdutils coreutils dash debconf 
+#  debian-archive-keyring debianutils diffutils dpkg e2fsprogs findutils 
+#  gcc-10-base:i386 gcc-9-base:i386 gpgv grep gzip hostname 
+#  init-system-helpers libacl1:i386 libapt-pkg6.0:i386 libattr1:i386 
+#  libaudit-common libaudit1:i386 libblkid1:i386 libbz2-1.0:i386 libc-bin 
+#  libc6:i386 libcap-ng0:i386 libcom-err2:i386 libcrypt1:i386 libdb5.3:i386 
+#  libdebconfclient0:i386 libext2fs2:i386 libffi7:i386 libgcc-s1:i386 
+#  libgcrypt20:i386 libgmp10:i386 libgnutls30:i386 libgpg-error0:i386 
+#  libgssapi-krb5-2:i386 libhogweed6:i386 libidn2-0:i386 libk5crypto3:i386 
+#  libkeyutils1:i386 libkrb5-3:i386 libkrb5support0:i386 liblz4-1:i386 
+#  liblzma5:i386 libmount1:i386 libnettle8:i386 libnsl2:i386 libp11-kit0:i386 
+#  libpam-modules-bin libpam-modules:i386 libpam-runtime libpam0g:i386 
+#  libpcre2-8-0:i386 libpcre3:i386 libseccomp2:i386 libselinux1:i386 
+#  libsemanage-common libsemanage1:i386 libsepol1:i386 libsmartcols1:i386 
+#  libss2:i386 libssl1.1:i386 libstdc++6:i386 libsystemd0:i386 libtasn1-6:i386 
+#  libtinfo6:i386 libtirpc-common libtirpc3:i386 libudev1:i386 
+#  libunistring2:i386 libuuid1:i386 libxxhash0:i386 libzstd1:i386 login 
+#  logsave lsb-base mawk mount ncurses-base ncurses-bin passwd perl-base sed 
+#  sysvinit-utils tar tzdata util-linux zlib1g:i386
+path-exclude /usr/share/doc/*
+
+# dpkg -S '/usr/share/doc/kde/HTML/*/*'
+#  dpkg-query: no path found matching pattern /usr/share/doc/kde/HTML/*/*
+path-exclude /usr/share/doc/kde/HTML/*/*
+
+# dpkg -S '/usr/share/gnome/help/*/*'
+#  dpkg-query: no path found matching pattern /usr/share/gnome/help/*/*
+path-exclude /usr/share/gnome/help/*/*
+
+# dpkg -S '/usr/share/info/*'
+#  coreutils diffutils findutils grep gzip sed
+path-exclude /usr/share/info/*
+
+# dpkg -S '/usr/share/linda/*'
+#  dpkg-query: no path found matching pattern /usr/share/linda/*
+path-exclude /usr/share/linda/*
+
+# dpkg -S '/usr/share/lintian/overrides/*'
+#  apt base-files base-passwd bash bsdutils dash debconf dpkg e2fsprogs 
+#  libc-bin libc6:i386 libdb5.3:i386 libgcc-s1:i386 libgssapi-krb5-2:i386 
+#  libidn2-0:i386 libkrb5-3:i386 libpam-modules-bin libpam-modules:i386 
+#  libpam-runtime libpam0g:i386 login mount ncurses-base passwd perl-base 
+#  util-linux
+path-exclude /usr/share/lintian/overrides/*
+
+# dpkg -S '/usr/share/locale/*'
+#  adduser apt bash coreutils diffutils dpkg findutils grep libapt-pkg6.0:i386 
+#  libgnutls30:i386 libidn2-0:i386 libpam-runtime login sed tar
+path-exclude /usr/share/locale/*
+
+# dpkg -S '/usr/share/man/*'
+#  adduser apt base-passwd bash bsdutils coreutils dash debconf debianutils 
+#  diffutils diversion by dash from diversion by dash to dpkg e2fsprogs 
+#  findutils gpgv grep gzip hostname init-system-helpers libaudit-common 
+#  libc-bin libpam-modules-bin libpam-modules:i386 libpam-runtime 
+#  libpcre3:i386 libsemanage-common libtirpc-common login logsave mawk mount 
+#  ncurses-bin passwd perl-base sed sysvinit-utils tar util-linux
+path-exclude /usr/share/man/*
+
+# dpkg -S '/usr/share/omf/*/*-*.emf'
+#  dpkg-query: no path found matching pattern /usr/share/omf/*/*-*.emf
+path-exclude /usr/share/omf/*/*-*.emf
+
+path-include /usr/share/doc/*/copyright
+path-include /usr/share/doc/kde/HTML/C/*
+path-include /usr/share/gnome/help/*/C/*
+path-include /usr/share/locale/all_languages
+path-include /usr/share/locale/currency/*
+path-include /usr/share/locale/l10n/*
+path-include /usr/share/locale/languages
+path-include /usr/share/locale/locale.alias
+path-include /usr/share/omf/*/*-C.emf

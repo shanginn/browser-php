@@ -1,0 +1,16 @@
+/.
+/etc
+/etc/php
+/etc/php/8.1
+/etc/php/8.1/mods-available
+/etc/php/8.1/mods-available/uuid.ini
+/usr
+/usr/lib
+/usr/lib/php
+/usr/lib/php/20210902
+/usr/lib/php/20210902/uuid.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/php8.1-uuid
+/usr/share/doc/php8.1-uuid/changelog.Debian.gz
+/usr/share/doc/php8.1-uuid/copyright

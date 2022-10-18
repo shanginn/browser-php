@@ -1,0 +1,5 @@
+2496088b868d7ccb31df7609e8ddccef  usr/lib/php/20210902/imap.so
+e41580cfbcbc2cfd512b586d06a725e4  usr/share/bug/php8.1-imap/control
+f8cccbaad1431f2392542ad071250137  usr/share/bug/php8.1-imap/script
+c35806f53a9eab6aaeb1914ce64d91f5  usr/share/lintian/overrides/php8.1-imap
+1c612561ed9920e804af8ce30197e97f  usr/share/php8.1-imap/imap/imap.ini

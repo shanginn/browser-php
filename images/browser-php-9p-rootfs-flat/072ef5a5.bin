@@ -1,0 +1,5 @@
+b063cd5b6d2e4551b695f8ddb5bf8009  usr/lib/php/20210902/gd.so
+e41580cfbcbc2cfd512b586d06a725e4  usr/share/bug/php8.1-gd/control
+c5cb224d4900f4e430c34c6fe7be7487  usr/share/bug/php8.1-gd/script
+321e03e634f6b98bd7260a0be4734df1  usr/share/lintian/overrides/php8.1-gd
+dcba6b3c7745411277aa243c2920ae70  usr/share/php8.1-gd/gd/gd.ini

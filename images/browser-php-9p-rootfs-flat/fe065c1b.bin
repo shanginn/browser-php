@@ -1,0 +1,18 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_php/UNDECLARED
+# Hey emacs, this is -*- shell-script -*-
+
+# Disable and then re-enable module on upgrades to deal with priority changes
+if [ "$1" = "upgrade" ]; then
+    if [ -e /usr/lib/php/php-maintscript-helper ] ; then
+	. /usr/lib/php/php-maintscript-helper
+
+	for version in 8.1 ; do
+	    for name in memcache ; do
+		php_invoke dismod "$version" ALL "$name" || exit 1
+	    done
+	done
+    fi
+fi
+# End automatically added section

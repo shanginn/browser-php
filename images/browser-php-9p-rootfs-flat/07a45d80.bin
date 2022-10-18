@@ -1,0 +1,34 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_php/UNDECLARED
+# Hey emacs, this is -*- shell-script -*-
+
+if [ "$1" = "upgrade" ]; then
+    # Cleanup of the old symlinks (including broken symlinks)
+    for version in 8.1 ; do
+        inidir="/etc/php/${version}"
+	for name in igbinary; do
+	    inifile="${name}.ini"
+	    find "${inidir}" -xtype l 2>/dev/null | \
+	    while read symlink; do
+	        if [ "$(basename "$(readlink -m "${symlink}")")" = "${inifile}" ]; then
+		    rm -f "${symlink}"
+		fi
+	    done
+	done
+    done
+fi
+
+# Disable and then re-enable module on upgrades to deal with priority changes
+if [ "$1" = "upgrade" ]; then
+    if [ -e /usr/lib/php/php-maintscript-helper ] ; then
+	. /usr/lib/php/php-maintscript-helper
+
+	for version in 8.1 ; do
+	    for name in igbinary ; do
+		php_invoke dismod "$version" ALL "$name" || exit 1
+	    done
+	done
+    fi
+fi
+# End automatically added section

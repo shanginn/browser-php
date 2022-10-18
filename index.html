@@ -1,0 +1,98 @@
+<!doctype html>
+<title>PHP 8.1 PsySH</title>
+<link rel="stylesheet" href="/assets/styles/v86.css">
+<link rel="stylesheet" href="/assets/styles/xterm.css">
+<style>
+.outer {
+    background: #b4b4b4;
+    opacity: 0.9;
+    width: 960px;
+    margin: 10px auto;
+    border-radius: 7px 7px 0px 0px;
+}
+.dots {
+    padding: 5px 10px;
+}
+.outer.dark {
+    background: #273138;
+}
+.outer.dark .dot {
+    background: #4a5c66;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #f9f9f9;
+    border-radius: 50%;
+    margin: 0 4px 0 0;
+}
+.dot.red {
+    background: #ff6057;
+    border: 1px solid #e14640;
+}
+.dot.amber {
+    background: #ffbd2e;
+    border: 1px solid #dfa123;
+}
+.dot.green {
+    background: #27c93f;
+    border: 1px solid #1dad2b;
+}
+</style>
+<script src="/assets/scripts/libv86.js"></script>
+<script src="/assets/scripts/xterm.js"></script>
+<script>
+"use strict";
+
+window.onload = function()
+{
+    var emulator = window.emulator = new V86Starter({
+        wasm_path: "/assets/bin/v86.wasm",
+        memory_size: 512 * 1024 * 1024,
+        vga_memory_size: 8 * 1024 * 1024,
+        screen_container: document.getElementById("screen_container"),
+        serial_container_xtermjs: document.getElementById("terminal"),
+        bios: {
+            url: "/assets/bin/seabios.bin",
+        },
+        vga_bios: {
+            url: "/assets/bin/vgabios.bin",
+        },
+        initial_state: {
+            "url": "/images/browser-php-state-base.bin",
+        },
+        filesystem: {
+            "baseurl": "/images/browser-php-9p-rootfs-flat/",
+            "basefs": { url: "/images/browser-php-base-fs.json" },
+        },
+        autostart: true,
+    });
+
+    var interval = setInterval(function()
+    {
+        if(emulator.is_running()) {
+            clearInterval(interval);
+            emulator.serial0_send("\n");
+        }
+    }, 100);
+}
+</script>
+
+<!-- A minimal structure for the ScreenAdapter defined in browser/screen.js -->
+<div id="screen_container" style="display: none">
+    <div style="white-space: pre; font: 14px monospace; line-height: 14px"></div>
+    <canvas style="display: none"></canvas>
+</div>
+
+<div class="outer dark">
+    <div class="dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+    <div class="inner">
+        <div id="terminal"></div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+/.
+/etc
+/etc/php
+/etc/php/8.1
+/etc/php/8.1/mods-available
+/etc/php/8.1/mods-available/memcache.ini
+/usr
+/usr/lib
+/usr/lib/php
+/usr/lib/php/20210902
+/usr/lib/php/20210902/memcache.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/php8.1-memcache
+/usr/share/doc/php8.1-memcache/changelog.Debian.gz
+/usr/share/doc/php8.1-memcache/copyright

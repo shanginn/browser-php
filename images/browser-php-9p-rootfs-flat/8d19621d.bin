@@ -1,0 +1,5 @@
+382ef260e68e9512afa89d211db7a944  usr/lib/apache2/modules/libphp8.1.so
+d41d8cd98f00b204e9800998ecf8427e  usr/lib/php/8.1/sapi/apache2
+e292692ac51d8795d197910b16e71e81  usr/share/bug/libapache2-mod-php8.1/control
+8d78eec413570869dbd55e45d494055c  usr/share/bug/libapache2-mod-php8.1/script
+198224bb0da46892264d2e66900525a4  usr/share/lintian/overrides/libapache2-mod-php8.1

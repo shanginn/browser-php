@@ -1,0 +1,5 @@
+0d1f6732bde0fef755b3343686994f9c  usr/lib/php/20210902/dba.so
+e41580cfbcbc2cfd512b586d06a725e4  usr/share/bug/php8.1-dba/control
+5fb599ad3647292965e6d3615efdad7d  usr/share/bug/php8.1-dba/script
+b0856f84bb60a5f70afccf9ec33eb73b  usr/share/lintian/overrides/php8.1-dba
+67b6d7fefda317d5ec6132b134993cb2  usr/share/php8.1-dba/dba/dba.ini

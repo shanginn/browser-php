@@ -1,0 +1,5 @@
+30da2b52d5912591717344e72d10b120  lib/i386-linux-gnu/security/pam_cap.so
+d075cc3deb7b345e6b0649077bd8f83a  usr/share/doc/libpam-cap/changelog.Debian.gz
+7a60e96cffd7432d5fb38b3d4e6f690c  usr/share/doc/libpam-cap/changelog.gz
+a6cc470bc77b47de05bc656d4b68cdee  usr/share/doc/libpam-cap/copyright
+597992b1cd66ad28fa4ab9664239a43d  usr/share/pam-configs/capability
